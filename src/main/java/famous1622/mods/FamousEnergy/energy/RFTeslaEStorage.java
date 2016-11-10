@@ -8,12 +8,6 @@ import net.darkhax.tesla.api.ITeslaProducer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.util.INBTSerializable;
 
-/**
- * Reference implementation of {@link IEnergyStorage}. Use/extend this or implement your own.
- *
- * @author King Lemming
- *
- */
 public class RFTeslaEStorage extends BaseTeslaContainer implements IEnergyStorage, ITeslaConsumer, ITeslaProducer, ITeslaHolder, INBTSerializable<NBTTagCompound> {
 
 	protected int energy;
