@@ -11,7 +11,7 @@ public class ModRecipes {
 	private static ShapedOreRecipe uniConvertRecipe;
 
 	public static void init() {
-		uniConvertRecipe = new ShapedOreRecipe(new ItemStack(ModBlocks.uniConvert), "WWW","WGW","WWW", 'W', "plankWood", 'g', Items.GOLD_INGOT);
+		uniConvertRecipe = new ShapedOreRecipe(new ItemStack(ModBlocks.uniConvert), "WWW","WGW","WWW", 'W', "plankWood", 'G', Items.GOLD_INGOT);
 		GameRegistry.addRecipe(uniConvertRecipe);
 	}
 
