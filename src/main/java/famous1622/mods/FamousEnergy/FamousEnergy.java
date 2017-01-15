@@ -1,13 +1,17 @@
 package famous1622.mods.FamousEnergy;
 
+import famous1622.mods.FamousEnergy.block.BlockUniversalConverter;
 import famous1622.mods.FamousEnergy.block.ModBlocks;
 import famous1622.mods.FamousEnergy.tileentities.ModTileEntities;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = FamousEnergy.MODID, name = FamousEnergy.MODNAME, version = FamousEnergy.VERSION)
 public class FamousEnergy {
@@ -27,6 +31,7 @@ public class FamousEnergy {
 	public void init(FMLInitializationEvent e) {
 		ModBlocks.init();
 		ModTileEntities.init();
+		ModRecipes.init();
 	}
 	
 	@EventHandler
